@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mainPage</title>
+  <link href="main-style.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="mp-header">
+    <div class="mp-header-container">
+      <span class="mp-header-logo-text">
+        UniJS - Under development
+      </span>
+      <div class="mp-header-links">
+        <a href="#"> App </a> <!-- app link -->
+        <a href="#contacts-anchor"> Contacts </a>
+        <a href="#"> About </a>
+      </div>
+    </div>
+  </header>
+  <main class="mp-main">
+    <section class="mp-first-section">
+      <div class="mp-title-block">
+        UniJS Web-Editor
+      </div>
+      <div class="mp-desc-block">
+        Free to use project
+        <span class="mp-desc-lower-text">
+          Use editor to view & edit your <br/> web projects
+        </span>
+      </div>
+    </section>
+    <section class="mp-second-section">
+      <div class="mp-title-block mp-title-block-second">
+        Support
+      </div>
+      <div class="mp-desc-block mp-desc-block-second">
+        Welcome support & QA
+        <span class="mp-desc-lower-text">
+          Contact us if you have questions <br/> or project improvement ideas
+        </span>
+      </div>
+    </section>
+    <section class="mp-third-section">
+      <span class="mp-title-h1" id="changeable-title">
+        Sign up for free now!
+      </span>
+      <div class="mp-form-container">
+        <div class="flip-box">
+          <div id="mp-flipbox" class="flip-box-inner">
+            <div class="flip-box-front">
+              <div class="mp-signup-form" id="mp-contacts-signup">
+                <input type="text" placeholder="Username" />
+                <input type="text" placeholder="Mail" />
+                <input type="password" placeholder="Password" class="mp-password-fn-element"/>
+                <input type="password" placeholder="Confirm password" class="mp-password-fn-element" />
+                <input type="button" value="Sign up" onclick="validatePassword()" />
+                <a onclick="flipImage()"> i already have account </a>
+              </div>
+            </div>
+            <div class="flip-box-back">
+              <div class="mp-signup-form" id="mp-contacts-signin">
+                <input type="text" placeholder="Username or mail" />
+                <input type="password" placeholder="Password" />
+                <input type="button" value="Sign in" />
+                <a onclick="flipImage()"> i haven't got account </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mp-forth-section">
+      <span class="mp-title-h1">
+        Contact with us
+      </span>
+      <div class="mp-contacts-wrapper" id="contacts-anchor">
+        <div class="mp-contact-block">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" version="1.1" width="64px" height="64px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+            <g id="e6c6b53d3c8160b22dad35a0f710525a">
+              <path display="inline" fill-rule="evenodd" clip-rule="evenodd" d="M509.365,393.284c-5.913,6.651-21.665,8.124-21.665,8.124   h-83.951c0,0-11.737,2.74-32.498-18.957c-14.263-14.907-28.922-36.897-40.621-46.038c-6.977-5.45-13.541-2.708-13.541-2.708   s-12.25,0.587-13.541,13.541c-2.269,22.752-5.416,35.205-5.416,35.205s-1.494,9.619-5.416,13.541   c-4.191,4.191-10.832,5.416-10.832,5.416S166.019,427.526,76.066,282.251C11.151,177.407,2.947,146.846,2.947,146.846   s-5.506-7.407,0-16.249c5.813-9.334,13.541-8.124,13.541-8.124h75.827c0,0,8.384,0.903,13.541,5.416   c5.652,4.945,8.125,13.541,8.125,13.541s16.622,40.193,35.206,70.411c25.68,41.754,37.914,37.914,37.914,37.914   s22.175-6.17,8.124-100.201c-1.944-13.008-27.081-16.249-27.081-16.249s-0.233-11.228,5.416-16.249   c6.479-5.761,13.541-5.416,13.541-5.416s11.245-1.964,51.454-2.708c20.326-0.375,35.205,0,35.205,0s9.894-0.329,21.665,8.125   c5.696,4.09,5.416,13.541,5.416,13.541s-2.388,67.862,0,102.909c1.029,15.074,8.125,16.249,8.125,16.249s7.622,5.902,37.913-37.914   c19.169-27.727,35.206-67.703,35.206-67.703s3.97-11.401,8.124-16.249c3.965-4.625,10.833-5.416,10.833-5.416h97.492   c0,0,6.011-0.221,8.124,5.416c1.941,5.176,0,16.249,0,16.249s-1.065,12.264-10.832,27.082   c-23.062,34.989-67.703,92.075-67.703,92.075s-3.351,7.752-2.708,13.541c0.708,6.371,5.416,10.832,5.416,10.832   s33.647,30.445,56.87,56.871c12.547,14.278,21.665,32.497,21.665,32.497S514.168,387.881,509.365,393.284z">
+              </path>
+            </g>
+          </svg>
+          <span class="mp-contact-text"> Our vk </span>
+        </div>
+        <div class="mp-contact-block">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" version="1.1" width="64px" height="64px" viewBox="0 0 512 512" xml:space="preserve">
+            <g id="7935ec95c421cee6d86eb22ecd12f847">
+              <path style="display: inline;" d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565   c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47   c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886   c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318   c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7   c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832   c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002   c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z">
+              </path>
+            </g>
+          </svg>
+          <span class="mp-contact-text"> Our twitter </span>
+        </div>
+        <div class="mp-contact-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 48 48" fill="none">
+            <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="#FFFFFF"/>
+          </svg>
+          <span class="mp-contact-text"> Our telegram </span>
+        </div>
+        <div class="mp-contact-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 24 24" fill="none">
+            <path d="M10 19H6.2C5.0799 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2C3 7.0799 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H17.8C18.9201 5 19.4802 5 19.908 5.21799C20.2843 5.40973 20.5903 5.71569 20.782 6.09202C21 6.51984 21 7.0799 21 8.2V10M20.6067 8.26229L15.5499 11.6335C14.2669 12.4888 13.6254 12.9165 12.932 13.0827C12.3192 13.2295 11.6804 13.2295 11.0677 13.0827C10.3743 12.9165 9.73279 12.4888 8.44975 11.6335L3.14746 8.09863M14 21L16.025 20.595C16.2015 20.5597 16.2898 20.542 16.3721 20.5097C16.4452 20.4811 16.5147 20.4439 16.579 20.399C16.6516 20.3484 16.7152 20.2848 16.8426 20.1574L21 16C21.5523 15.4477 21.5523 14.5523 21 14C20.4477 13.4477 19.5523 13.4477 19 14L14.8426 18.1574C14.7152 18.2848 14.6516 18.3484 14.601 18.421C14.5561 18.4853 14.5189 18.5548 14.4903 18.6279C14.458 18.7102 14.4403 18.7985 14.405 18.975L14 21Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="mp-contact-text"> Support mail </span>
+        </div>
+        <div class="mp-contact-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 24 24" fill="none">
+            <path d="M19 18V21M19 15H19.01M15 19H6.2C5.0799 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2C3 7.0799 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H17.8C18.9201 5 19.4802 5 19.908 5.21799C20.2843 5.40973 20.5903 5.71569 20.782 6.09202C21 6.51984 21 7.0799 21 8.2V11.5M20.6067 8.26229L15.5499 11.6335C14.2669 12.4888 13.6254 12.9165 12.932 13.0827C12.3192 13.2295 11.6804 13.2295 11.0677 13.0827C10.3743 12.9165 9.73279 12.4888 8.44975 11.6335L3.14746 8.09863" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="mp-contact-text"> QA team mail </span>
+        </div>
+      </div>
+    </section>
+    <section class="mp-fifth-section">
+      <span class="mp-title-h1 mp-title-align-left">
+        Use editor right now
+      </span>
+      <div class="mp-editor-open-button">
+        <input type="button" value="Open editor"/>
+      </div>
+    </section>
+  </main>
+  <footer class="mp-footer">
+    <div class="mp-header-container">
+      <span class="mp-footer-text1">
+        UniJS - Under development
+      </span>
+      <span class="mp-footer-text2">
+        developed by unijs-team
+      </span>
+    </div>
+  </footer>
+<script>
+  function flipImage(){
+    let changeableText = document.getElementById("changeable-title");
+    let flipElement = document.getElementById("mp-flipbox");
+    flipElement.classList.contains("flip-box-inner-flip")
+      ? flipElement.classList.remove("flip-box-inner-flip")
+      : flipElement.classList.add("flip-box-inner-flip")
+    flipElement.classList.contains("flip-box-inner-flip")
+      ? changeableText.innerText = `Sign in now!`
+      : changeableText.innerText = `Sign up for free now!`
+  }
+
+  let signUpForm = document.getElementById("mp-contacts-signup");
+  let signInForm = document.getElementById("mp-contacts-signin");
+
+  signUpForm.querySelectorAll("input").forEach((DOMElement) => {
+      if (DOMElement.getAttribute("type") === "text" || DOMElement.getAttribute("type") === "password")
+        DOMElement.addEventListener(("change"),() => validateValueLength("signUpForm_void"))
+  });
+
+  function validateValueLength() {
+    signUpForm.querySelectorAll("input").forEach((DOMElement) => {
+      if (DOMElement.getAttribute("type") === "text")
+        DOMElement.value.split('').length < 6 || DOMElement.value.split('').includes(' ')
+          ? DOMElement.classList.add("mp-wrong-input-style")
+          : DOMElement.classList.remove("mp-wrong-input-style")
+
+      else if (DOMElement.getAttribute("type") === "password")
+        DOMElement.value.split('').length < 10 || DOMElement.value.split('').includes(' ')
+          ? DOMElement.classList.add("mp-wrong-input-style")
+          : DOMElement.classList.remove("mp-wrong-input-style")
+    })
+  }
+  function validatePassword() { // fix
+    signInForm.getElementsByClassName("mp-password-fn-element").item()
+    ===
+    signInForm.getElementsByClassName("mp-password-fn-element").item(1).getRootNode().nodeValue
+      ? alert("Passwords isn-t matches")
+      : ''
+  }
+</script>
+</body>
+</html>
