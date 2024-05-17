@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+  --maincolor: #343434;
+  --secondarycolor: #0094FF;
+  --font-main: #FFFFFF;
+  --font-secondary: #000000;
+  --title-font-size: 48px;
+  --title-font-bold: bold;
+  --paragraph-font-size: 36px;
+  --paragraph-font-bold: regular;
+  --footer-font-size: 20px;
+  --button-bg: #0094FF;
+  --button-bg-hover: #005694;
+  --button-border-radius: 4px;
+  --section-border-radius: 20px;
+  --section-left-shadow: 6px 6px 10px 2px rgba(0,0,0,0.25);
+  --section-right-shadow: -6px 6px 10px 2px rgba(0,0,0,0.25);
+  --section-center-shadow: 0px 3px 4px 6px rgba(0,0,0,0.25);
+  --main-width: 1440px;
+  --font-family: "Jetbrains Mono";
+
+  --hover-transition-button: .2s all ease-in-out;
+}
+
+html{
+  background-color: var(--maincolor);
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span{
+  cursor: default;
+}
+input{
+  border-radius: var(--button-border-radius);
+  outline: none !important;
+  font-family: var(--font-family);
+}
+input[type="button"]{
+  cursor: pointer;
+  transition: var(--hover-transition-button);
+}
+input[type="text"]{
+  cursor: auto;
+  border: none;
+}
+.mp-header{
+  width: -webkit-fill-available;
+  height: 50px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondarycolor);
+  font-weight: lighter;
+  font-size: 20px;
+}
+.mp-header-container{
+  width: var(--main-width);
+  border: 0px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+}
+.mp-main{
+  width: var(--main-width);
+  height: max-content;
+  border: 0px solid white;
+  padding: 0 15px 0 15px;
+  margin-top: 30px;
+}
+.mp-header-links a{
+  text-decoration: none !important;
+  margin-left: 20px;
+  color: white !important;
+}
+.mp-title-block{
+  width: 585px;
+  height: 360px;
+  box-shadow: var(--section-left-shadow);
+  font-size: 48px;
+  font-weight: bold;
+  border-radius: var(--section-border-radius);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 20px;
+}
+.mp-first-section{
+  display: flex;
+  flex-direction: row;
+}
+.mp-desc-block{
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.mp-desc-lower-text{
+  font-size: 36px;
+  font-weight: regular;
+  color: white;
+  margin-top: 15px
+}
+.mp-second-section{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top:125px;
+  justify-content: space-between;
+}
+.mp-desc-block-second{
+  margin-left: 0 !important;
+}
+.mp-title-block-second{
+  box-shadow: var(--section-right-shadow);
+}
+.mp-title-h1{
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-bold);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mp-third-section{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mp-signup-form{
+  margin-top: 80px;
+  width: 800px;
+  height: 475px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: var(--section-center-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+.mp-signup-form input[type="text"],.mp-signup-form input[type="password"]{
+  margin-bottom: 27px;
+  width: 500px;
+  height: 40px;
+  font-size: 24px;
+}
+.mp-signup-form input[type="button"]{
+  width: 250px;
+  height: 50px;
+  background-color: #0094FF;
+  font-size: 24px;
+  color: white;
+  border: 0px;
+}
+.mp-signup-form input[type="button"]:hover{
+  background-color: #005694;
+}
+.mp-signup-form a{
+  margin-top: 25px;
+  text-decoration: underline;
+  color: white;
+}
+.mp-signup-form-back{
+  margin-top: 80px;
+  width: 800px;
+  height: 475px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: var(--section-center-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mp-signup-form.back{
+  transform: rotateY(180deg);
+}
+.mp-form-container{
+  transform-style: preserve-3d;
+  display: flex;
+  width: -webkit-fill-available;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-box-inner-flip{
+  transform: rotateY(180deg);
+}
+.flip-box {
+  background-color: transparent;
+  height: 650px;
+  width: -webkit-fill-available;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+.flip-box-back {
+  background: transparent;
+  transform: rotateY(180deg);
+}
+.mp-form-container a{
+  cursor: pointer;
+}
+.mp-contacts-wrapper{
+  margin-top: 92px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+}
+.mp-contacts-wrapper a{
+  z-index: 5;
+}
+.mp-contact-block{
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  width: 311px;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.mp-contact-block span{
+  margin-left: 16px;
+}
+.mp-wrong-input-style{
+  border: 0px solid red !important;
+  box-shadow: 0px 0px 7px 0px rgb(255, 0, 0);
+}
+.mp-title-align-left{
+  margin-top: 72px;
+  justify-content: flex-start;
+}
+.mp-fifth-section{
+
+}
+.mp-editor-open-button{
+  width: auto;
+  height: 50px;
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 125px;
+}
+.mp-editor-open-button input[type="button"]{
+  width: 250px;
+  height: 50px;
+  background-color: #0094FF;
+  font-size: 24px;
+  color: white;
+  border: 0px;
+}
+.mp-editor-open-button input[type="button"]:hover{
+  background-color: #005694;
+}
+.mp-footer{
+  width: -webkit-fill-available;
+  height: 50px;
+  background-color: var(--secondarycolor);
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+}
